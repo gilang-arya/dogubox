@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -d "venv" ]; then
+    echo "Virtual environment belum ada, membuat venv..."
+    python3 -m venv venv
+fi
+
+# Jalankan app.py dengan Python dari venv
+venv/bin/python src/app.py

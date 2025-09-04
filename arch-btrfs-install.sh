@@ -34,7 +34,6 @@ btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@log
 btrfs subvolume create /mnt/@cache
 btrfs subvolume create /mnt/@tmp
-btrfs subvolume create /mnt/@varlib
 umount /mnt
 
 # Mount subvolumes
@@ -45,7 +44,6 @@ mount -o noatime,compress=zstd:3,autodefrag,subvol=@home   "$PATH_LINUX" /mnt/ho
 mount -o noatime,compress=zstd:3,subvol=@log               "$PATH_LINUX" /mnt/var/log
 mount -o noatime,compress=zstd:3,subvol=@cache             "$PATH_LINUX" /mnt/var/cache
 mount -o noatime,compress=zstd:3,subvol=@tmp               "$PATH_LINUX" /mnt/tmp
-mount -o noatime,compress=zstd:3,autodefrag,subvol=@varlib "$PATH_LINUX" /mnt/var/lib
 mount "$PATH_BOOT" /mnt/boot/efi
 
 # === BASE INSTALL ===

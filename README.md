@@ -24,11 +24,3 @@ dogubox/
 ├── scripts/                # Supporting scripts
 └── src/                    # Custom tools
 ```
-
-## Minimal Arch Linux Install
-
-To perform a minimal Arch Linux installation using Btrfs, you can run:
-
-```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/gilang-arya/dogubox/main/arch-btrfs-install.sh)"
-```
